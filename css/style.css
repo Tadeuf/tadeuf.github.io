@@ -1,32 +1,78 @@
-      
-      /* Aula inicial :D */
-      body{
-        text-align: center;
-        background: #A7E8BD;
-        background-image: url('https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.1366.jpg');
-        background-size: auto 100vh;
-        font-family: Arial;
-        height: 100vh;
-      }
-      .site-subtitle,
-      .site-title {
-         color: whitesmoke;
-      }
-      a{
-        
-         text-decoration: none;
-      }
-      a:hover{
-        text-decoration: underline;
-      }
-      .menu{
-        background-color: white;
-      }
-      .menu ul{
-        justify-content: space-around;
-        display: flex;
-      }
-      .menu li{
-        list-style: none;
-        display: flex;
-      }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+body{
+  background: #A7E8BD;
+  background-image: url('https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.1366.jpg');
+  background-size: auto 100vh;
+  height: 100vh;
+  font-size: 10px;
+
+}
+@media (min-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
+}
+header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu a{
+  color: crimson;
+  background-color:whitesmoke ;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.menu{
+  background-color: white;
+  position: fixed;
+  top: 0; 
+  width: 100vw;
+}
+.menu ul{
+  justify-content: space-around;
+  display: flex;
+}
+.menu li{
+  list-style: none;
+}
+
+.site-subtitle {
+  color: silver;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2em;
+}
+
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 3em;
+}
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
